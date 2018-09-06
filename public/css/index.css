@@ -1,3 +1,15 @@
+:root {
+	--yellow: #fefbd8;
+	--green:  #618685;
+	--blue: #36486b;
+	--purple:	#4040a1;
+	--bwhite: #ffffff;
+	--font: Consolas;
+}
+
+body {
+	background: var(--bwhite);
+}
 
 /* Grid */
 .content-container {
@@ -23,6 +35,7 @@ nav {
 	grid-area: nav;
 	display: flex;
 	justify-content: center;
+	background: var(--blue);
 }
 
 nav ul {
@@ -39,6 +52,18 @@ nav ul li {
 nav ul li a {
 	padding: 20px 50px 20px 50px;
 	display: inline-block;
+	color: var(--bwhite);
+	text-decoration: none;
+	font-family: Consolas;
+	font-size: 16pt;
+	background: var(--blue);
+	-webkit-transition: background 0.4s, color 0.4s, font-size 0.4s;
+}
+
+nav ul li a:hover {
+	background: var(--bwhite);
+	font-size: 18pt;
+	color: black;
 }
 
 .background-wrapper {
