@@ -63,13 +63,13 @@
 }
 
 .bar-shadow {
-	box-shadow: 2px 2px 2px 2px black;
+	box-shadow: 0px 0px 1px 1px black;
 	cursor: pointer;
 	-webkit-transition: all 0.1s;
 }
 
 .bar-shadow:hover {
-	box-shadow: 0px 0px 1px 1px black;
+	box-shadow: 2px 2px 2px 2px black;
 }
 
 .bar-shadow:active {

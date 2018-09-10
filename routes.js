@@ -29,11 +29,19 @@ module.exports = (app) => {
 			res.render('pages/error')
 			return;
 		}
-		
-		files = ret.map(x => (x.split(' ').join('')).toLowerCase());
 
-		
-		res.render('pages/books', { books : ret });
+		//Render book reviews
+		files = ret.map(x => (x.split(' ').join('')).toLowerCase());
+		for(let i=0; i<files.length; i++) {
+			try {
+				//Render the book pages
+				files[i] = await ejs.renderFile(__dirname+"/views/books/"+files[i]+".ejs");
+			} catch(e) {
+				files[i] = await ejs.renderFile(__dirname+"/views/books/notfound.ejs", { title:ret[i]});
+			}
+		}
+
+		res.render('pages/books', { books : files });
 	});
 
 	app.get('/movies', (req, res) => res.render('pages/movies'));
