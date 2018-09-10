@@ -1,0 +1,23 @@
+<!DOCTYPE html> <html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<% include ../partials/header	 %>
+	<title></title>
+</head>
+<body>
+	<% include ../partials/nav %>
+	
+	<h1>Hello Book!</h1>
+  <p>
+		Let's talk more about those books
+  </p>
+
+	<% for(let i=0; i<books.length; i++) { %>
+		<h1><%= books[i] %></h1>
+	<% } %>
+
+
+	<% include ../partials/footer %>
+</body>
+</html>
+

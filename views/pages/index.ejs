@@ -1,5 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html> <html lang="en">
 <head>
 	<meta charset="UTF-8">
 	<% include ../partials/header	 %>
@@ -8,8 +7,18 @@
 <body>
 	<% include ../partials/nav %>
 	
-	Hello World!
-	
+	<h1>Hello World!</h1>
+  <p>
+  	This page/blog attempts to establish both a set of goals
+  	or the coming year, as well as visualizing their progress.
+  	no more excuses, let's get shit done.
+  </p>
+
+	<% for(let i=0; i<bars.length; i++) { %>
+	  <%- bars[i] %>
+  <% } %>	
+
 	<% include ../partials/footer %>
 </body>
 </html>
+

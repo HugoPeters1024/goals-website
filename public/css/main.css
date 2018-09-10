@@ -1,14 +1,24 @@
 :root {
 	--yellow: #fefbd8;
-	--green:  #618685;
+	--green: #04511b; 
 	--blue: #36486b;
 	--purple:	#4040a1;
 	--bwhite: #ffffff;
-	--font: Consolas;
+	--rust: #b25c1e;
+	--font: Arial;
+	--heading: Serif;
 }
 
 body {
 	background: var(--bwhite);
+	font-family: var(--font);
+	font-size: 14pt;
+}
+
+h1 {
+	font-size: 32pt;
+	color: var(--rust);
+	font-family: var(--heading);
 }
 
 /* Grid */
@@ -54,10 +64,12 @@ nav ul li a {
 	display: inline-block;
 	color: var(--bwhite);
 	text-decoration: none;
-	font-family: Consolas;
 	font-size: 16pt;
 	background: var(--blue);
+	height: 20px; 
 	-webkit-transition: background 0.4s, color 0.4s, font-size 0.4s;
+	display: flex;
+	justify-content: center;
 }
 
 nav ul li a:hover {
@@ -74,13 +86,20 @@ nav ul li a:hover {
 
 .body-wrapper {
 	width: 70%;
-	justify-content: center;
-	display: flex;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	text-align: center;
 }
 
 footer {
 	grid-area: footer;
 	justify-content: center;
+	align-items: center;
 	display: flex;
-	padding: 20px 0px 20px 0px;
+	height: 40px;
+	background: var(--blue);
+	color: white;
+	font-size: 12pt;
+	padding-bottom: 30px;
+	font-family: Monospace;
 }

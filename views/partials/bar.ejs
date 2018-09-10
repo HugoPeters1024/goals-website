@@ -1,0 +1,32 @@
+<% let count = bar.count %>
+<% if (bar.content) { count = bar.content.length } %>
+<% let w = count / bar.total * 100 %>
+<% let title = bar.name + " (" + count.toString() + "/" + bar.total.toString() + ")"; %>
+
+<div class="bar-object">
+	 <div class="bar-wrapper"> 
+		<div class="bar-background"> </div>
+		<div class="bar-progress-wrapper">
+			<div class="bar-progress" style='<%= "width:"+w.toString()+"%"  %>'></div>
+		</div>
+		<div class="bar-text"><%= title %></div>
+	</div>
+	<% if (bar.content) { %>
+	<div class="bar-content">
+		<ul>
+			<% for(let i=0; i<bar.content.length; i++) { %>
+				<li><%= bar.content[i] %></li>
+			<% } %>
+		</ul>
+		<% if (bar.url) { %>
+		<span class="bar-link">
+			<a href=<%= bar.url %>>Read More</a>
+		</span>
+		<% } %>
+	</div>
+	<% } %>
+</div>
+
+
+
+

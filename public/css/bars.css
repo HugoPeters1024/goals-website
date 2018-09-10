@@ -1,0 +1,93 @@
+@keyframes slideInFromLeft {
+	0% {
+		width: 0%;
+	}
+	100% {
+		width: 100%;
+	}
+}
+
+.bar-object {
+	-webkit-transition: all 0.2s;
+	padding: 0px;
+}
+
+.bar-wrapper {
+	padding-top: 30px;
+	padding-bottom: 30px;
+	position: relative;
+}
+
+.bar-background {
+	display: block;
+	background-color: #dddddd;
+	width: 100%;
+  height: 30px;	
+	font-size: 15pt;
+	position: absolute;
+	color: white;
+}
+
+.bar-progress-wrapper {
+	animation: 0.5s ease-out 0s 1 slideInFromLeft;
+	position: absolute;
+	width: 100%;
+}
+
+.bar-progress {
+	display: block;
+	background-color: var(--green);
+	width: 60%;
+	height: 30px;
+	z-index: 10;
+}
+
+.bar-text {
+	color: black;
+	width: 100%;
+	height: 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	z-index: 12;
+	font-size: 17pt;
+}
+
+.bar-link {
+	display: flex;
+	justify-content: flex-end;
+	color: var(--rust);
+	text-decoration: underline;
+	font-weight: bold;
+}
+
+.bar-shadow {
+	box-shadow: 2px 2px 2px 2px black;
+	cursor: pointer;
+	-webkit-transition: all 0.1s;
+}
+
+.bar-shadow:hover {
+	box-shadow: 0px 0px 1px 1px black;
+}
+
+.bar-shadow:active {
+	box-shadow: 0px 0px 0px 0px black;
+}
+
+.bar-content {
+	-webkit-transition: all 0.2s;
+	background: inherit;
+	margin-bottom: -200px;
+	display:none;
+	cursor: pointer;
+	opacity: 0;
+}
+
+.bar-content ul {
+	list-style-type: none;
+	padding: 10px;
+	height: 150px;
+}
+
