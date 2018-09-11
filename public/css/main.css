@@ -21,6 +21,10 @@ h1 {
 	font-family: var(--heading);
 }
 
+h2 {
+	color: var(--rust);
+}
+
 /* Grid */
 .content-container {
 	 width: 100%;
