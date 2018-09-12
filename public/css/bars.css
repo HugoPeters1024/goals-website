@@ -52,6 +52,7 @@
 	position: absolute;
 	z-index: 12;
 	font-size: 17pt;
+	mix-blend-mode: darken;
 }
 
 .bar-link {
