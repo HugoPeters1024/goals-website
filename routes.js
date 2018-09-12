@@ -1,7 +1,6 @@
 const ejs = require('ejs')
 const fs = require('fs')
 const util = require('util');
-const request = require('request');
 const http = require('http');
 
 readFile = util.promisify(fs.readFile);
