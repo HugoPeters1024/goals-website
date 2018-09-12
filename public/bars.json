@@ -8,8 +8,7 @@
 					"Crime and Punishment",
 					"12 Rules for Life",
 					"This can't be true"
-				],
-			"url" : "/books"
+				]
 		},
 		{
 			"name": "Movies Watched",
@@ -19,8 +18,7 @@
 				[
 					"Two girls one cup",
 					"Donnie Darko"
-				],
-			"url" : "/movies"
+				]
 		},
 		{
 			"name": "Bakken gevouwen",
@@ -34,7 +32,7 @@
 		},
 		{
 			"name": "Uren Gesport",
-			"count": 1,
+			"count": 2,
 			"total": 120
 		}
 	]

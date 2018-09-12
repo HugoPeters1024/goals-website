@@ -9,5 +9,6 @@ app.use(express.static('public'));
 routes(app)
 
 app.use('/api', api_router);
+app.use((req, res) => res.render('pages/error'));
 
 app.listen(8000, () => console.log("Server listening to port 8000."))
