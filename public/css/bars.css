@@ -9,6 +9,7 @@
 
 .bar-object {
 	-webkit-transition: all 0.2s;
+	width: 100%;
 	padding: 0px;
 }
 

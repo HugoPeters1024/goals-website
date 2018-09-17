@@ -25,6 +25,13 @@ h2 {
 	color: var(--rust);
 }
 
+@viewport {
+	width: 100%;
+	zoom: 1.0;
+	user-zoom: fixed;
+}
+
+
 /* Grid */
 .content-container {
 	 width: 100%;
@@ -93,6 +100,12 @@ nav ul li a:hover {
 	padding-top: 40px;
 	padding-bottom: 40px;
 	text-align: center;
+}
+
+@media screen and (max-width: 1200px) {
+	.body-wrapper {
+		width: 100%;
+	}
 }
 
 footer {
