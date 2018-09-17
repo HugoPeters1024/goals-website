@@ -12,8 +12,8 @@
 		},
 		{
 			"name": "Movies Watched",
-			"count": 33,
-			"total": 100,
+			"count": 0,
+			"total": 24,
 			"content":
 				[
 					"Two girls one cup",
@@ -21,18 +21,23 @@
 				]
 		},
 		{
-			"name": "Bakken gevouwen",
-			"count": 210,
-			"total": 420
+			"name": "Concerts Attented",
+			"total" : 5,
+			"content" :
+				[
+					"Death Grips"
+				]
 		},
 		{
-			"name": "New Albums Listened",
-			"count": 24,
-			"total" : 100
+			"name": "Coding Projects",
+			"count" : 0,
+			"total" : 5,
+			"note" : "Projects will posted on the coding page"
 		},
 		{
 			"name": "Uren Gesport",
 			"count": 3,
-			"total": 120
+			"total": 120,
+			"unit" : "h"
 		}
 	]

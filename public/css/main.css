@@ -110,28 +110,35 @@ nav ul li a:hover {
 
 footer {
 	grid-area: footer;
-	justify-content: flex-end;
+	justify-content: center;
 	display: flex;
 	background: var(--blue);
 	color: white;
 	font-size: 12pt;
-	padding: 30px;
+	padding: 20px;
 	padding-right: 50px;
 	font-family: Monospace;
 }
 
 footer ul {
 	list-style-type: none;
+	padding-right: 10%;
+	padding-left: 10%;
+	text-align: center;
 }
 
-footer ul li{
-	display: flex;
-	justify-content: flex-end;
+footer ul li:first-child {
+	margin-bottom: 5px;
 }
+
+footer ul li:last-child {
+	margin-top: 5px;
+}
+
 
 h3 {
 	color: white;
-	font-size: 14pt;
+	font-size: 16pt;
 	margin: 0;
 	padding: 0;
 }

@@ -10,7 +10,7 @@ for (let i=0; i<bars.length; i++) {
 		//Get the content element from the children
 		if (content) { //without content no expand at all
 			if (!bars[i].activated) {
-				bars[i].style="padding-bottom:200px";
+				bars[i].style="padding-bottom:20px";
 				content.style="opacity:1;display:inherit"
 				bars[i].activated = true;
 			}

@@ -1,7 +1,9 @@
 <% let count = bar.count %>
 <% if (bar.content) { count = bar.content.length } %>
 <% let w = count / bar.total * 100 %>
-<% let title = bar.name + " (" + count.toString() + "/" + bar.total.toString() + ")"; %>
+<% let unit = "" %>
+<% if (bar.unit) unit = bar.unit %>
+<% let title = bar.name + " (" + count.toString() + unit + "/" + bar.total.toString() + unit + ")"; %>
 
 <div class="bar-object">
 	 <div class="bar-wrapper"> 
@@ -15,13 +17,14 @@
 	<div class="bar-content">
 		<ul>
 			<% for(let i=0; i<bar.content.length; i++) { %>
-				<li><%= bar.content[i] %></li>
+				<li> <%= bar.content[i] %> </li>
 			<% } %>
 		</ul>
+		<span class="bar-note"><%= bar.note %></span>
 		<% if (bar.url) { %>
-		<span class="bar-link">
-			<a href=<%= bar.url %>>Read More</a>
-		</span>
+			<span class="bar-link">
+				<a href=<%= bar.url %>>Read More</a>
+			</span>
 		<% } %>
 	</div>
 	<% } %>

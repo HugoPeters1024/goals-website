@@ -64,6 +64,10 @@
 	font-weight: bold;
 }
 
+.bar-note {
+	font-size: 12pt;
+}
+
 .bar-shadow {
 	box-shadow: 1px 1px 1px 1px black;
 	cursor: pointer;
@@ -81,7 +85,6 @@
 .bar-content {
 	-webkit-transition: all 0.2s;
 	background: inherit;
-	margin-bottom: -200px;
 	display:none;
 	cursor: pointer;
 	opacity: 0;
@@ -90,6 +93,5 @@
 .bar-content ul {
 	list-style-type: none;
 	padding: 10px;
-	height: 150px;
 }
 
