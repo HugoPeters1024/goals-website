@@ -16,8 +16,8 @@
 			"total": 24,
 			"content":
 				[
-					"Two girls one cup",
-					"Donnie Darko"
+					"BlacKkKlansman (2018)",
+					"Niemand in de stad (2018)"
 				]
 		},
 		{
@@ -35,9 +35,14 @@
 			"note" : "Projects will posted on the coding page"
 		},
 		{
-			"name": "Uren Gesport",
-			"count": 3,
+			"name": "Worked out",
+			"count": 9,
 			"total": 120,
 			"unit" : "h"
+		},
+		{
+			"name" : "Meals Prepared",
+			"count" : 8,
+			"total" : 50
 		}
 	]
