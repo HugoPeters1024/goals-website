@@ -1,5 +1,6 @@
 body {
 	background-image: url("../ns.jpg");
+	background-size: cover;
 }
 
 .wrapper {
