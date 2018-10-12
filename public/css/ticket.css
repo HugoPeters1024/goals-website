@@ -1,5 +1,5 @@
 body {
-	background-color: red;
+	background-image: url("../ns.jpg");
 }
 
 .wrapper {
@@ -8,6 +8,7 @@ body {
 	align-items: center;
 	width: 100%;
 	margin-top: 10%;
+
 }
 
 .block {
