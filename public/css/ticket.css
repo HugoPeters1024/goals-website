@@ -1,0 +1,41 @@
+body {
+	background-color: red;
+}
+
+.wrapper {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	margin-top: 10%;
+}
+
+.block {
+	background-color: white;
+	display: flex;
+	width: 50%;
+	justify-content: center;
+	padding: 30px;
+}
+
+.info {
+	width: 80%;
+}
+
+.info td {
+	padding-top: 4px;
+	padding-bottom: 4px;
+}
+
+.info tr td:first-child {
+	float: left;
+}
+
+.info tr td:last-child {
+	float: right;
+}
+
+.info tr td.center {
+	float: none;
+  text-align: center;	
+}

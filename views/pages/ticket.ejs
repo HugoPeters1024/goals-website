@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="css/ticket.css">
+	<title></title>
+</head>
+<body>
+	 <div class="wrapper">
+	 	<div class="block">
+				<table class="info">
+					<tr>
+						<td class="center">
+							<h1>Ticket</h1>	
+						</td>
+					</tr>
+					<tr>
+						<td>Van</td>
+						<td><%= ticket.Origin || "..."%></td>
+					</tr>
+					<tr>
+						<td>Naar</td>
+						<td><%= ticket.Destination || "..."%></td>
+					</tr>
+					<tr>
+						<td>Class</td>
+						<td><%= ticket.Class || "unknown" %></td>
+					</tr>
+					<tr>
+						<td>Type</td>
+						<td><%= ticket.Type  || "unkwown" %></td>
+					</tr>
+					<tr>
+						<td>Prijs</td>
+						<td>&euro;<%= ticket.Price || 0%></td>
+					</tr>
+				</table>
+		</div>
+	 </div>
+
+</body>
+</html>
