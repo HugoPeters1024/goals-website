@@ -20,6 +20,11 @@ module.exports = (app) => {
 		"Destination" : req.query.destination,
 		"Origin" : req.query.origin,
 		"Type" : req.query.type,
+		"Class" : req.query.class,
 		"Price" : req.query.price
+	} }));
+
+	app.get('/receipt', (req, res) => res.render('pages/receipt', { receipt: {
+		"Number" : req.query.number
 	} }));
 }

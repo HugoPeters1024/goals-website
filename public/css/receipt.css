@@ -1,0 +1,35 @@
+body {
+	background-image: url("../vertraging.jpg");
+	background-size: cover;
+}
+
+.wrapper {
+	display: flex;
+	justify-content: center;
+}
+
+.block {
+	background-color: white;
+	padding: 80px;
+	width: 30%;
+	margin-top: 10%;
+	display: flex;
+	justify-content: center;
+	box-shadow: 7px 7px 6px 8px rgba(0,0,0,0.7);
+}
+
+.number {
+	background-color: #cccccc;
+	display: flex;
+	justify-content: center;
+	padding: 5px;
+	width: 100%;
+}
+
+table tr {
+	text-align: center;
+}
+
+table tr td {
+	padding-top 20px;
+}
