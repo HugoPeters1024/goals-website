@@ -1,6 +1,12 @@
 body {
 	background-image: url("../ns.jpg");
 	background-size: cover;
+	font-family: monospace;
+	font-size: 16pt;
+}
+
+h1 {
+	font-size: 30pt;
 }
 
 .wrapper {
@@ -25,9 +31,13 @@ body {
 	width: 80%;
 }
 
-.info td {
+.info tr {
 	padding-top: 4px;
 	padding-bottom: 4px;
+}
+
+.info tr.line td {
+	border-bottom: 1px solid black;
 }
 
 .info tr td:first-child {
@@ -41,4 +51,9 @@ body {
 .info tr td.center {
 	float: none;
   text-align: center;	
+}
+
+.qr {
+	width: 256px;
+	height: 256px;
 }

@@ -15,15 +15,15 @@
 						</td>
 					</tr>
 					<tr>
-						<td>Van</td>
+						<td>From</td>
 						<td><%= ticket.Origin || "..."%></td>
 					</tr>
 					<tr>
-						<td>Naar</td>
+						<td>To</td>
 						<td><%= ticket.Destination || "..."%></td>
 					</tr>
 					<tr>
-						<td>Class</td>
+						<td>Klass</td>
 						<td><%= ticket.Class || "unknown" %></td>
 					</tr>
 					<tr>
@@ -33,6 +33,11 @@
 					<tr>
 						<td>Prijs</td>
 						<td>&euro;<%= ticket.Price || 0%></td>
+					</tr>
+					<tr>
+						<td class="center">
+							<img class="qr" src="qr.png" alt="">
+						</td>
 					</tr>
 				</table>
 		</div>
